@@ -10,17 +10,32 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    background-image: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1920');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body.home-page {
+  font-family: 'Roboto', sans-serif;
+  color: #000000; /* Black text color for the home page */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1000&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+body.about-page {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff; /* White text color for About Us */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1000&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 
 header {
     background-color: var(--primary-color);
