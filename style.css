@@ -108,6 +108,7 @@ button:focus {
 }
 
 /* Footer Contrast Fix */
+
 footer {
     background-color: var(--primary-color);
     color: #ffffff; /* Brightened from dim gray */
