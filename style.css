@@ -117,3 +117,135 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+
+
+/* Task 1: Flexbox layout */
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul 
+{
+    display: flex;
+    gap: 15px;
+}
+
+#shop 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#shop h2 
+{
+    width: 100%;
+}
+
+.product-card 
+{
+    flex: 1 1 250px;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+}
+
+/* Task 1: Hover effect and transition on links */
+
+nav ul li a,
+.blog-post a 
+{
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+.blog-post a:hover 
+{
+    color: #ff7675;
+}
+
+/* Task 1: CSS animation */
+
+@keyframes fadeIn 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main 
+{
+    animation: fadeIn 0.8s ease;
+}
+
+/* Images in cards and blog */
+
+.card-img,
+.blog-img 
+{
+    width: 100%;
+    max-width: 360px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+/* Task 2: Mobile */
+
+@media (max-width: 599px) 
+{
+    header,
+    nav ul 
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .product-card 
+    {
+        flex: 1 1 100%;
+    }
+
+    button 
+    {
+        width: 100%;
+    }
+}
+
+/* Task 2: Tablets  */
+
+@media (min-width: 600px) and (max-width: 1024px) 
+{
+    .product-card 
+    {
+        flex: 1 1 45%;
+    }
+}
+
+/* Task 2: Desktops  */
+
+@media (min-width: 1025px) 
+{
+    .product-card 
+    {
+        flex: 1 1 30%;
+    }
+}
